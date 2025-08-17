@@ -12,7 +12,7 @@ const Testimonials = () => {
             ease:"power1.inOut",
             scrollTrigger:{
                 trigger: ".testimonials-section",
-                start:"50% center",
+                start:"5% top",
                 end:"250% center",
                 scrub:true,
             }
@@ -22,7 +22,7 @@ const Testimonials = () => {
             ease:"power1.inOut",
             scrollTrigger:{
                 trigger: ".testimonials-section",
-                start:"50% center",
+                start:"5% top",
                 end:"250% center",
                 scrub:true,
             }
@@ -32,7 +32,7 @@ const Testimonials = () => {
             ease:"power1.inOut",
             scrollTrigger:{
                 trigger: ".testimonials-section",
-                start:"50% center",
+                start:"5% top",
                 end:"250% center",
                 scrub:true,
             }
