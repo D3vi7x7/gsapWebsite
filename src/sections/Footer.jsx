@@ -8,6 +8,10 @@ const Footer = () => {
         query:"(max-width: 768px)"
     })
 
+    const isTablet = useMediaQuery({
+        query:"(max-width: 1024px)"
+    })
+
   return (
     <div className='footer-section'>
       <img src="/images/footer-dip.png" alt="" 
@@ -35,16 +39,22 @@ const Footer = () => {
        muted
        className='object-contain absolute mix-blend-lighten bottom-35 scale-200'></video>
         :
-        <video
+        !isMobile && !isTablet && <video
        src="/videos/splash.mp4"
        autoPlay
        playsInline
        muted
        className='object-contain absolute mix-blend-lighten top-10'></video>}
+       {isTablet && <video
+       src="/videos/splash.mp4"
+       autoPlay
+       playsInline
+       muted
+       className='object-contain absolute mix-blend-lighten bottom-0'></video>}
 
        <div className='text-milk/40 w-full flex absolute md:bottom-5 
        items-center justify-between md:px-20
-       md:text-3xl font-extralight top-70 px-3'>
+       md:text-3xl font-extralight bottom-140 px-3'>
         <h2>Follow us @spyltdrinks</h2>
         <h2>©Copyright. All rights reserved.</h2>
        </div>

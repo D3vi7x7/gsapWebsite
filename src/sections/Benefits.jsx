@@ -11,7 +11,7 @@ const Benefits = () => {
             scrollTrigger:{
                 trigger:".benefit-section",
                 start: "top top",
-                end: "15% top",
+                end: "7% top",
                 scrub: 1,
             }
         })
@@ -21,7 +21,7 @@ const Benefits = () => {
             ease:"power1.inOut",
             scrollTrigger:{
                 trigger:".benefit-section",
-                start: "10% top",
+                start: "15% top",
                 end: "25% top",
                 scrub: 1,
             }
@@ -32,8 +32,8 @@ const Benefits = () => {
             ease:"power1.inOut",
             scrollTrigger:{
                 trigger:".benefit-section",
-                start: "20%% top",
-                end: "35% top",
+                start: "20% top",
+                end: "30% top",
                 scrub: 1,
             }
         })
@@ -43,8 +43,8 @@ const Benefits = () => {
             ease:"power1.inOut",
             scrollTrigger:{
                 trigger:".benefit-section",
-                start: "30% top",
-                end: "45% top",
+                start: "25% top",
+                end: "35% top",
                 scrub: 1,
             }
         })

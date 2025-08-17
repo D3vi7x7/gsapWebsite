@@ -70,7 +70,7 @@ const Testimonials = () => {
 
   return (
     <div className='testimonials-section py-0'>
-      <div className='lg:mt-0 md:mt-55 text-center'>
+      <div className='text-center'>
         <h1 className='text-black t1'>WHAT'S</h1>
         <h1 className='text-yellow-400 t2 md:relative md:-left-38 -left-47'>EVERYONE</h1>
         <h1 className='text-black t3'>TALKING</h1>
