@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './sections/Hero'
 import gsap from 'gsap'
@@ -13,11 +13,14 @@ import Benefits from './sections/Benefits'
 import Testimonials from './sections/Testimonials'
 import { useMediaQuery } from 'react-responsive'
 import Footer from './sections/Footer'
+import Loading from './components/Loading'
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 
 const App = () => {
+
+  const [loading, setLoading] = useState(true);
 
   const isMobile = useMediaQuery({
     query:"(max-width: 768px)"
@@ -44,6 +47,16 @@ const App = () => {
       lenis.destroy();
     };
   })
+
+  useEffect(() => {
+    // simulate async tasks (API, images, etc.)
+    const timer = setTimeout(() => setLoading(false), 5000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loading />; // show loader
+  }
 
   return (
     <main className='bg-milk'>
