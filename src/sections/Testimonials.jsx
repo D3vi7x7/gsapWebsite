@@ -12,7 +12,7 @@ const Testimonials = () => {
             ease:"power1.inOut",
             scrollTrigger:{
                 trigger: ".testimonials-section",
-                start:"5% top",
+                start:"top top",
                 end:"250% center",
                 scrub:true,
             }
@@ -22,7 +22,7 @@ const Testimonials = () => {
             ease:"power1.inOut",
             scrollTrigger:{
                 trigger: ".testimonials-section",
-                start:"5% top",
+                start:"top top",
                 end:"250% center",
                 scrub:true,
             }
@@ -32,7 +32,7 @@ const Testimonials = () => {
             ease:"power1.inOut",
             scrollTrigger:{
                 trigger: ".testimonials-section",
-                start:"5% top",
+                start:"top top",
                 end:"250% center",
                 scrub:true,
             }
@@ -41,7 +41,7 @@ const Testimonials = () => {
         const vidTl = gsap.timeline({
           scrollTrigger:{
             trigger:".testimonials-section",
-            start:"5% top",
+            start:"top top",
             end:"200% top",
             pin:true,
             scrub:1.5,
