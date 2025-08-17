@@ -24,8 +24,7 @@ const App = () => {
   })
 
   useGSAP(() => {
-    if(!isMobile){
-      const lenis = new Lenis({
+    const lenis = new Lenis({
       duration: 1.2, // Scroll speed
       smooth: true,
     });
@@ -44,7 +43,6 @@ const App = () => {
     return () => {
       lenis.destroy();
     };
-    }
   })
 
   return (
