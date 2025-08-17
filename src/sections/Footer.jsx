@@ -45,7 +45,7 @@ const Footer = () => {
        playsInline
        muted
        className='object-contain absolute mix-blend-lighten top-10'></video>}
-       {isTablet && <video
+       {isTablet && !isMobile && <video
        src="/videos/splash.mp4"
        autoPlay
        playsInline

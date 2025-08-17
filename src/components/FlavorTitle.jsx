@@ -7,7 +7,7 @@ import { useMediaQuery } from 'react-responsive'
 const FlavorTitle = () => {
 
     const isMobile = useMediaQuery({
-      query: "max-width: 600px"
+      query: "(max-width: 600px)"
     })
 
     useGSAP(() => {

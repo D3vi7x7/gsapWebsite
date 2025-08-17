@@ -1,9 +1,14 @@
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { SplitText } from 'gsap/all'
+import { useMediaQuery } from 'react-responsive'
 import React from 'react'
 
 const Hero = () => {
+
+    const isMobile = useMediaQuery({
+      query: "(max-width: 768px)"
+    })
 
     useGSAP(() => {
         const titleSplit = SplitText.create(".hero-title",{
@@ -76,6 +81,7 @@ const Hero = () => {
                 <div className='hero-button'>
                     <p>Chug a SPYLT</p>
                 </div>
+                {isMobile && <img className='absolute -bottom-20' src="/images/hero-img.png" alt="" />}
             </div>
         </div>
     </section>
